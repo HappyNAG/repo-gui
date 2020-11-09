@@ -1,0 +1,23 @@
+using System;
+class Task1
+{
+    public void Main()
+    {
+        Console.WriteLine("Введите своё имя: ");
+        string name = Console.ReadLine();
+        Console.WriteLine("Введите свою фамилию: ");
+        string surname = Console.ReadLine();
+        Console.WriteLine("Введите свой возраст(полных лет): ");
+        string age = Console.ReadLine();
+        Console.WriteLine("Введите свой рост(в сантиметрах): ");
+        string heiht = Console.ReadLine();
+        Console.WriteLine("Введите свой вес(в киллограмах): ");
+        string weight = Console.ReadLine();
+
+        Console.WriteLine("1.a) " + name + " " + surname + " " + age + " лет, рост = " + heiht + " см, вес = " + weight + " кг");
+        Console.WriteLine(string.Format("1.б) {0} {1} {2} {3} {4}", name, surname, age, heiht, weight));
+        Console.WriteLine($"1.в) {name} {surname} {age} {heiht} {weight}");
+        Console.ReadKey();
+        Console.Clear();
+    }
+}
