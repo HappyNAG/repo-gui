@@ -1,0 +1,26 @@
+using System;
+class Task3
+{
+    public void Main()
+    {
+        int x;
+        int x1 = 1;
+        int x2 = 2;
+
+        // a)
+        x = x1;
+        x1 = x2;
+        x2 = x;
+
+        Console.WriteLine("a) x1 = " + x1 + ", x2 = " + x2);
+        Console.ReadKey();
+
+        // b)
+        x1 = x1 + x2;
+        x2 = x1 - x2;
+        x1 = x1 - x2;
+
+        Console.WriteLine("b) x1 = " + x1 + ", x2 = " + x2);
+        Console.ReadKey();
+    }
+}
